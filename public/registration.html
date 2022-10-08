@@ -20,84 +20,85 @@
       <div class="square" style="--i:2;"></div>
       <div class="square" style="--i:3;"></div>
       <div class="square" style="--i:4;"></div>
-      <div class="container">
-        <div class="row shadow-lg mx-auto" style="height: 80vh; width: 70vw;">
-            <div class="col-5"  id="intro">
-              <h3 class="text-white">JINGLE JANGLE <img src="/assets/dancing.png"style="height: 50px; width: 50px;" alt=""></h3>
+     <div class="container">
+        <div class="row">
+          <div class="col-5 d-none d-lg-block shadow">
+            <h3 class="text-white">JINGLE JANGLE <img class="jing" src="/assets/dancing.png" alt=""></h3>
             <div class="row">
-             <div class="col-10 mx-auto">
-              <div class="row" style="margin-top: 50px;">
-                  <div class="col-4">
-                      <img src="/assets/itunes.png" class="" style="height: 50px; width: 50px;" alt="">
+              <div class="col-10 mx-auto">
+                 <div class="row" style="margin-top: 50px;">
+                   <div class="col-4">
+                       <img src="/assets/itunes.png" class="" alt="">
+                   </div>
+                   <div class="col-7 text-white">
+                   <p>Music Streaming</p>
+                   </div>
                   </div>
-                  <div class="col-7 text-white" >
-                 <p>Music Streaming</p>
+                  <div class="row" style="margin-top: 70px;">
+                    <div class="col-4">
+                        <img src="/assets/direct-download.png" class="" alt="">
+                    </div>
+                    <div class="col-7 text-white">
+                   <p>Multiple Downloads</p>
+                    </div>
+                  </div>
+                  <div class="row" style="margin-top: 90px;">
+                    <div class="col-4">
+                        <img src="/assets/upload.png" class="" alt="">
+                    </div>
+                    <div class="col-7 text-white" >
+                   <p>Sharing and Meetup</p>
+                    </div>
                   </div>
               </div>
-              <div class="row" style="margin-top: 70px;">
-                <div class="col-4">
-                    <img src="/assets/direct-download.png" class="" style="height: 50px; width: 50px;" alt="">
-                </div>
-                <div class="col-7 text-white" >
-               <p>Multiple Downloads</p>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 90px;">
-                <div class="col-4">
-                    <img src="/assets/upload.png" class="" style="height: 50px; width: 50px;" alt="">
-                </div>
-                <div class="col-7 text-white" >
-               <p>Sharing and Meetup</p>
-                </div>
-            </div>
-             </div>
-            </div>
-            </div>
-            <div class="col-7" id="regPage">
-             <div class="row">
-               <h3 class="lead m-4 fw-bold">Registration Page</h3>
-               <div>
-                   <label for="">Nickname</label>
-                   <input type="text" name="" class="form-control" id="nickInp">
-               </div>
-               <div class="row my-4">
-                   <div class="col-6">
-                    <label for="">Firstname</label>
-                    <input type="text" name="" class="form-control" id="fnameInp">
-                   </div>
-                   <div class="col-6">
-                    <label for="">Lastname</label>
-                    <input type="text" name="" class="form-control" id="lnameInp">
-                   </div>
-               </div>
-               <div>
-                <label for="">Email</label>
-                <input type="email" name="" class="form-control" id="emailInput">
-            </div>
-             <div class="mt-2">
+           </div>
+          </div>
+          <div class="col-lg-7 col-sm-12">
+            <h3 class="lead m-4 fw-bold">Registration Page</h3>
+            <div class="row">
+              <div>
+                  <label for="">Nickname</label>
+                  <input type="text" name="" class="form-control" id="nickInp">
+              </div>
+              <div class="row my-4">
+                  <div class="col-6">
+                   <label for="">Firstname</label>
+                   <input type="text" name="" class="form-control" id="fnameInp">
+                  </div>
+                  <div class="col-6">
+                   <label for="">Lastname</label>
+                   <input type="text" name="" class="form-control" id="lnameInp">
+                  </div>
+              </div>
+              <div>
+               <label for="">Email</label>
+               <input type="email" name="" class="form-control" id="emailInput">
+              </div>
+              <div class="mt-2">
                 <label for="">Password</label>
                 <input type="password" name="" minlength="6" class="form-control" id="passwordInp">
-            </div>
-            <div class="row my-4">
-                <div class="col-5 ">
-                  <div class="row">
-                    <div class="col-3 col-sm-3">
-                      <div class="center">
-                        <input type="checkbox" name="" id="input">
-                      </div>
-                    </div>
-                    <div class="col-7 mx-auto">
-                      <small>I agree to the terms and conditions listed by the above company</small>
+             </div>
+             <div class="row my-4">
+              <div class="col-5 ">
+                <div class="row">
+                  <div class="col-3 col-sm-3">
+                    <div class="center">
+                      <input type="checkbox" name="" id="input">
                     </div>
                   </div>
+                  <div class="col-7 mx-auto">
+                    <small>I agree to the terms and conditions listed by the above company</small>
+                  </div>
                 </div>
-                <div class="col-3 mx-5" style="margin-left: -150px;">
-                    <button class="btn btn-primary text-white" id="signupBtn">Submit</button> 
-                </div>
-             </div>
-            </div>
+              </div>
+              <div class="col-3 mx-5" style="margin-left: -150px;">
+                  <button class="btn btn-primary text-white" id="signupBtn">Submit</button> 
+              </div>
+           </div>
+           </div>
+          </div>
         </div>
-    </div>
+      </div>
       </div>
   </section>
 </body>
@@ -152,6 +153,7 @@ let dbRef = ref(db,'customers')
     })
     
 document.getElementById('signupBtn').addEventListener('click',function(){
+  let password=passwordInp.value;
   if (password.length< 6) {
     alert("password must be more than 6 characters");
   }
